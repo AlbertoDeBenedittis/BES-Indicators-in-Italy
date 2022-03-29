@@ -1,10 +1,15 @@
 import os 
+import esda
 import folium
 import leafmap
 import numpy as np 
 import pandas as pd
+import seaborn as sbn
+import libpysal as lps
 import geopandas as gpd
+import streamlit as st
 import plotly.express as px
+from matplotlib import colors
 import matplotlib.pyplot as plt
 from folium.plugins import HeatMap
 from folium.plugins import MarkerCluster
@@ -411,34 +416,102 @@ def title_folium_map(map, title:str):
 
 def line_chart_plotly(Bes_df, to_hide_1, to_hide_2, to_hide_3, titolo = ''):
     df_plotly = pd.DataFrame(columns = ['TERRITORIO', 'MISURA', 'ANNO'])
-    territorio = []
-    misura = []
-    _anno_ = []
-    for i in range(len(Bes_df)):
-        for j in range(4,20):
-            
-            if j < 10:
-                anno = 'V_200' + str(j)
-            else:
-                anno = 'V_20' + str(j)
+    if len(df_plotly) > 1:
+        territorio = []
+        misura = []
+        _anno_ = []
+        for i in range(len(Bes_df)):
+            for j in range(4,20):
                 
-            anno_ = int(anno[2:])
-            territorio.append(Bes_df.iloc[i]['TERRITORIO'])
-            misura.append(Bes_df.iloc[i][anno])
-            _anno_.append(anno_)
+                if j < 10:
+                    anno = 'V_200' + str(j)
+                else:
+                    anno = 'V_20' + str(j)
+                    
+                anno_ = int(anno[2:])
+                territorio.append(Bes_df.iloc[i]['TERRITORIO'])
+                misura.append(Bes_df.iloc[i][anno])
+                _anno_.append(anno_)
 
-    
-    
-    df_plotly['TERRITORIO'] = territorio
-    df_plotly['ANNO'] = _anno_
-    df_plotly['MISURA'] = misura
+        
+        
+        df_plotly['TERRITORIO'] = territorio
+        df_plotly['ANNO'] = _anno_
+        df_plotly['MISURA'] = misura
 
 
-    to_hide_1.extend(to_hide_2)
-    to_hide_1.extend(to_hide_3)
-    fig = px.line(df_plotly, x = 'ANNO', y = 'MISURA', color = 'TERRITORIO', title = titolo)
-    fig.for_each_trace(lambda trace: trace.update(visible="legendonly") 
-                   if trace.name in to_hide_1 else ())
+        to_hide_1.extend(to_hide_2)
+        to_hide_1.extend(to_hide_3)
+        fig = px.line(df_plotly, x = 'ANNO', y = 'MISURA', color = 'TERRITORIO', title = titolo)
+        fig.for_each_trace(lambda trace: trace.update(visible="legendonly") 
+                    if trace.name in to_hide_1 else ())
+        
+        
+        return fig
     
+    else:
+        return ('There are not enough data to produce a line chart')
+
+def autocorrelation(path: str, df_prov: gpd.GeoDataFrame, Reg_df : gpd.GeoDataFrame, var : str):
+    '''
+    '''
+    df_prov.to_crs(4326, inplace = True)
+    Reg_df.to_crs(4326, inplace = True)
+    df_prov2 = look_for_anomalies(df_prov, var)
+    if len(df_prov2[var]) == 0:
+        return 'It is not possible to compute autocorrelation'
+    df_prov2 = df_prov2.reset_index()
+    prova_df = gpd.sjoin(Reg_df, 
+                          df_prov2, how='inner', predicate='contains')
+    prova_df2 = prova_df.reset_index()
+    median_val = prova_df2[var].groupby([prova_df2['Reg']]).mean()
+    prova_df2 = prova_df.merge(median_val, on = 'Reg')
+    df = prova_df2
+    wq =  lps.weights.Queen.from_dataframe(df)
+    wq.transform = 'r'
+    var = var + '_y'
+    y = df[var]
+    yb = 1 * (y > y.median()) # convert back to binary
+    wq =  lps.weights.Queen.from_dataframe(df)
+    wq.transform = 'b'
+    np.random.seed(12345)
+    #jc = esda.join_counts.Join_Counts(yb, wq)
+    mi = esda.moran.Moran(y, wq)
+    fig_1 = plt.figure(figsize=(10, 4))
+    sbn.kdeplot(mi.sim, shade=True)
+    plt.vlines(mi.I, 0, 1, color='r')
+    plt.vlines(mi.EI, 0,1)
+    plt.xlabel("Moran's I")
+    #sbn.kdeplot(jc.sim_bb, shade=True)
+    #plt.vlines(jc.bb, 0, 0.075, color='r')
+    #plt.vlines(jc.mean_bb, 0,0.075)
+    #plt.xlabel('BB Counts')
+    st.write('We obtain Moran\'s index = ', str(mi.p_sim))
+    if mi.p_sim > 0.05:
+        return 'There is no statistical correlation: Moran\'s Index = ' + str(mi.p_sim)
+    else: 
+        st.pyplot(fig_1)
+    spot_labels = [ '0 ns', '1 hot spot', '2 doughnut', '3 cold spot', '4 diamond']
+    li = esda.moran.Moran_Local(y, wq)
+    sig = 1 * (li.p_sim < 0.05)
+    hotspot = 1 * (sig * li.q==1)
+    coldspot = 3 * (sig * li.q==3)
+    doughnut = 2 * (sig * li.q==2)
+    diamond = 4 * (sig * li.q==4)
+    spots = hotspot + coldspot + doughnut + diamond
+    labels = [spot_labels[i] for i in spots]
+    hmap = colors.ListedColormap([ 'lightgrey', 'red', 'lightblue', 'blue', 'pink'])
+    fig_2, ax = plt.subplots(1, figsize=(9, 9))
+    df.assign(cl=labels).plot(column='cl', categorical=True, \
+            k=2, cmap=hmap, linewidth=0.1, ax=ax, \
+            edgecolor='white', legend=True)
+    ax.set_axis_off()
+    plt.title('Local Autocorrelation: Hot Spots, Cold Spots, and Spatial Outliers')
+    plt.show()
+
+    return fig_2
     
-    return fig
+
+def representative_point(df:gpd.GeoDataFrame):
+
+    return df.geometry.representative_point().to_crs(4326)
