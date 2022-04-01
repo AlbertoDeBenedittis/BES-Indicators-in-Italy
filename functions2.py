@@ -1,5 +1,6 @@
 import os 
 import esda
+import math
 import folium
 import leafmap
 import numpy as np 
@@ -244,15 +245,11 @@ def folium_interactive_map(df, var, file_name, indicator):
 
     # Create the folium map 
     m10=folium.Map(location=[41.9027835,12.4963655],tiles='openstreetmap',zoom_start=5)
-    
-    df = look_for_anomalies(df,var)
-    # Data
-    #df.dropna(subset = [var], inplace = True)
+
+    df = look_for_anomalies2(df, var)
     df.to_crs(4326, inplace = True)
-    df.reset_index(inplace = True)
+
     
-    # Print 
-    #print(df.columns)
     folium.Choropleth(
     geo_data = df.to_json(),
     data = df,
@@ -282,6 +279,26 @@ def folium_interactive_map(df, var, file_name, indicator):
 
     return m10
 
+def look_for_anomalies2(df,var):
+
+    i = 0
+    in_set = set()
+
+    for el in df[var].values:
+        if type(el) == str or math.isnan(el): 
+            
+            in_set.add(i)
+    
+        i += 1 
+
+    df.reset_index(inplace=True)
+    df.drop(list(in_set), inplace = True)   
+    
+    
+    return df
+
+
+
 def look_for_anomalies(df, var):
     
     df[var] = df[var].fillna(np.nan)
@@ -298,12 +315,13 @@ def look_for_anomalies(df, var):
 
     if len(in_set) == 0 :
         return  df
+
     else: 
         df_2 = df.reset_index()
         for ind in in_set:
             #print(df_2.iloc[ind].TERRITORIO)
             #print(type(df_2.iloc[ind].TERRITORIO))
-            df.drop(index = df_2.iloc[ind].TERRITORIO, inplace = True ) 
+            df.drop(index = df_2.iloc[ind].TERRITORIO, inplace = True) 
     
     return df
 
@@ -416,41 +434,41 @@ def title_folium_map(map, title:str):
 
 def line_chart_plotly(Bes_df, to_hide_1, to_hide_2, to_hide_3, titolo = ''):
     df_plotly = pd.DataFrame(columns = ['TERRITORIO', 'MISURA', 'ANNO'])
-    if len(df_plotly) > 1:
-        territorio = []
-        misura = []
-        _anno_ = []
-        for i in range(len(Bes_df)):
-            for j in range(4,20):
+    #if len(df_plotly) > 1:
+    territorio = []
+    misura = []
+    _anno_ = []
+    for i in range(len(Bes_df)):
+        for j in range(4,20):
                 
-                if j < 10:
-                    anno = 'V_200' + str(j)
-                else:
-                    anno = 'V_20' + str(j)
+            if j < 10:
+                anno = 'V_200' + str(j)
+            else:
+                anno = 'V_20' + str(j)
                     
-                anno_ = int(anno[2:])
-                territorio.append(Bes_df.iloc[i]['TERRITORIO'])
-                misura.append(Bes_df.iloc[i][anno])
-                _anno_.append(anno_)
+            anno_ = int(anno[2:])
+            territorio.append(Bes_df.iloc[i]['TERRITORIO'])
+            misura.append(Bes_df.iloc[i][anno])
+            _anno_.append(anno_)
 
         
         
-        df_plotly['TERRITORIO'] = territorio
-        df_plotly['ANNO'] = _anno_
-        df_plotly['MISURA'] = misura
+    df_plotly['TERRITORIO'] = territorio
+    df_plotly['ANNO'] = _anno_
+    df_plotly['MISURA'] = misura
 
 
-        to_hide_1.extend(to_hide_2)
-        to_hide_1.extend(to_hide_3)
-        fig = px.line(df_plotly, x = 'ANNO', y = 'MISURA', color = 'TERRITORIO', title = titolo)
-        fig.for_each_trace(lambda trace: trace.update(visible="legendonly") 
-                    if trace.name in to_hide_1 else ())
+    to_hide_1.extend(to_hide_2)
+    to_hide_1.extend(to_hide_3)
+    fig = px.line(df_plotly, x = 'ANNO', y = 'MISURA', color = 'TERRITORIO', title = titolo)
+    fig.for_each_trace(lambda trace: trace.update(visible="legendonly") 
+            if trace.name in to_hide_1 else ())
         
         
-        return fig
+    return fig
     
-    else:
-        return ('There are not enough data to produce a line chart')
+    #else:
+        #return ('There are not enough data to produce a line chart')
 
 def autocorrelation(path: str, df_prov: gpd.GeoDataFrame, Reg_df : gpd.GeoDataFrame, var : str):
     '''
@@ -507,7 +525,7 @@ def autocorrelation(path: str, df_prov: gpd.GeoDataFrame, Reg_df : gpd.GeoDataFr
             edgecolor='white', legend=True)
     ax.set_axis_off()
     plt.title('Local Autocorrelation: Hot Spots, Cold Spots, and Spatial Outliers')
-    plt.show()
+    
 
     return fig_2
     
