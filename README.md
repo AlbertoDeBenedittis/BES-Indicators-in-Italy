@@ -37,11 +37,13 @@ The repository is structured as follows:
 ## The code 🐍
 
 The code is fully written in Python. 
-> For the project I have used two different virtual environments due to some problems with the underlying dependencies of some libraries such as `pyrosm` and `geopandas`. 
-> The requirements for the first environment are written in the `requirements.txt` file while the requirements for the second environment are described in the `requirements2.txt`. 
-> For this second environment I suggest, to create the empty virtual environment and then installing `pyrosm` with conda as follows: `conda install -c conda-forge pyrosm` `geopandas` will be installed in a compatible way automatically. 
-> For the first environment there are no particular suggestions, almost all the packages have been installed with `conda` or `conda-forge` e.g.  `conda install --channel conda-forge geopandas`.
-> In `Notebook.ipynb` is specified where the two different enviromnet are used. However, broadly speaking, the second virtual enviromnent has been used just for collecting the data from Open Street Map through `pyrosm`
+* For the project I have used two different virtual environments due to some problems with the underlying dependencies of some libraries such as `pyrosm` and `geopandas`. 
+* The requirements for the first environment are written in the `requirements.txt` file while the requirements for the second environment are described in the `requirements2.txt`. 
+* For this second environment I suggest, to create the empty virtual environment and then installing `pyrosm` with conda as follows:
+ > `conda install -c conda-forge pyrosm`  `geopandas` will be installed in a compatible way automatically. 
+* For the first environment there are no particular suggestions, almost all the packages have been installed with `conda` or `conda-forge`
+>  e.g.  `conda install --channel conda-forge geopandas`.
+* In `Notebook.ipynb` is specified where the two different enviromnet are used. However, broadly speaking, the second virtual enviromnent has been used just for collecting the data from Open Street Map through `pyrosm`
 
 
 
