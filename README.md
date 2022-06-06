@@ -31,3 +31,11 @@ The repository is structured as follows:
 
 ## The code 🐍
 
+The code is fully written in Python. 
+For the project I have used two different virtual environments due to some problems with the underlying dependencies of some libraries such as Pyrosm and Geopandas. 
+The requirements for the first environment are written in the requirements.txt file while the requirements for the second environment are described in the `requirements2.txt`
+
+
+
+
+
