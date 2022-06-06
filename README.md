@@ -20,20 +20,37 @@ The website allows:
 
 The repository is structured as follows: 
 
-* The folder Dati contains another folder Limiti which containes the shape files that describe the administrative boarders of the italian territories according to [ISTAT](https://www.istat.it/it/archivio/222527)
-* The folder Dati Bes contains an excel file where are stored [all the data](https://www.istat.it/en/well-being-and-sustainability/the-measurement-of-well-being/indicators) of each of the Bes indicator.
-* Dati Streamlite contains all the data after the data processing stage. This folders contains a folder for each domain where are stored the files containing the data of each indicator
-* Dictionaries contains three pickels files. Each of them contains a python dictionary where are saved the results of the best territory analysis. 
-* Factories, Freetime, and No_Profit contain the data retrived from osm via pyrosm about all the factories, the non for profit organizations and the amanities of the biggest city in Italy. 
-* Medaglie contains the .png files of a gold medal, a silver medal, and a bronze medal. They are used in the maps of the best territories
-* Icons contains the .png files of the logos of the 10 biggest city of italy. They are used in the isochrones maps. 
+* The folder `Dati` contains another folder Limiti which containes the shape files that describe the administrative boarders of the italian territories according to [ISTAT](https://www.istat.it/it/archivio/222527)
+* The folder `Dati Bes` contains an excel file where are stored [all the data](https://www.istat.it/en/well-being-and-sustainability/the-measurement-of-well-being/indicators) of each of the Bes indicator.
+* `Dati Streamlite` contains all the data after the data processing stage. This folders contains a folder for each domain where are stored the files containing the data of each indicator
+* `Dictionaries` contains three pickels files. Each of them contains a python dictionary where are saved the results of the best territory analysis. 
+* `Factories`, `Freetime`, and `No_Profit` contain the data retrived from osm via `pyrosm` about all the factories, the non for profit organizations and the amanities of the biggest city in Italy. 
+* `Medaglie` contains the .png files of a gold medal, a silver medal, and a bronze medal. They are used in the maps of the best territories
+* `Icons` contains the .png files of the logos of the 10 biggest city of italy. They are used in the isochrones maps. 
+* the two requirements files contains all the dependences of the two virtual enviromnet used for this project
+* The geospatial_project.pdf is the report where is carefully explained the aim of the analysis, the sources of data, the results obtained, and the limits of the analysis. 
+* The `Notebook.ipynb` is the Notebook file where are collected all the stages of the analysis.
+* The other files are just images used as pointer in some of the maps
 
 
 ## The code 🐍
 
 The code is fully written in Python. 
-For the project I have used two different virtual environments due to some problems with the underlying dependencies of some libraries such as Pyrosm and Geopandas. 
-The requirements for the first environment are written in the requirements.txt file while the requirements for the second environment are described in the `requirements2.txt`
+For the project I have used two different virtual environments due to some problems with the underlying dependencies of some libraries such as `pyrosm` and `geopandas`. 
+The requirements for the first environment are written in the `requirements.txt` file while the requirements for the second environment are described in the `requirements2.txt`. 
+For this second environment I suggest, to create the empty virtual environment and then installing `pyrosm` with conda as follows: `conda install -c conda-forge pyrosm`
+`geopandas` will be installed in a compatible way automatically. 
+For the first environment there are no particular suggestions, almost all the packages have been installed with `conda` or `conda-forge` e.g.  `conda install --channel conda-forge geopandas`.
+In `Notebook.ipynb` is specified where the two different enviromnet are used. However, broadly speaking, the second virtual enviromnent has been used just for collecting the data from Open Street Map through `pyrosm`
+
+
+
+
+
+
+
+
+
 
 
 
