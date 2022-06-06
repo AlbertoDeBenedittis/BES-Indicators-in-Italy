@@ -1,0 +1,3 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:street,name,website,office,geometry,osm_type
+0,"{'addr:street': 'Piazza Giovanni Del Vento', 'name': 'United Nations Global Service Centre', 'office': 'ngo', 'website': 'https://www.unlb.org/'}",0.0,3,5934281058,17.946835,1631867126,40.649467,Piazza Giovanni Del Vento,United Nations Global Service Centre,https://www.unlb.org/,ngo,POINT (17.946834564208984 40.64946746826172),node
+1,"{""building"":""yes""}",,2,416965153,,1513942775,,,Cooperativa Progresso Agricolo,,ngo,"POLYGON ((17.3819906 40.8351338, 17.382157 40.8351722, 17.3822951 40.8348261, 17.3818063 40.8347135, 17.3817015 40.8349761, 17.3818677 40.8350144, 17.3819036 40.8349245, 17.3820598 40.8349604, 17.3819906 40.8351338))",way

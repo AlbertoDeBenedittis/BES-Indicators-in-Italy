@@ -1,0 +1,2 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,name,website,office,geometry,osm_type
+0,"{'addr:city': 'Borgonovo Val Tidone', 'addr:housenumber': '64', 'addr:postcode': '29011', 'addr:street': 'Loc. Bruso', 'name': 'Gruppo Alpini', 'office': 'ngo', 'website': 'http://anaborgonovo.altervista.org'}",0,3,4388859854,9.45852,1516100853,45.000725,Borgonovo Val Tidone,64,29011,Loc. Bruso,Gruppo Alpini,http://anaborgonovo.altervista.org,ngo,POINT (9.45851993560791 45.00072479248047),node

@@ -1,0 +1,2 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,name,office,geometry,osm_type
+0,"{""name:en"":""Teglio's Pizzocchero Academy""}",0,1,7026947280,10.067197,1575313748,46.172485,Teglio,6,23036,Piazza St. Eufemia,Accademia del Pizzocchero di Teglio,ngo,POINT (10.0671968460083 46.1724853515625),node

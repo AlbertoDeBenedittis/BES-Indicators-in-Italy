@@ -1,0 +1,5 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,email,name,phone,website,office,geometry,osm_type
+0,"{""fax"":""+39 0153 3349""}",0,1,4085222088,8.052498,1459265973,45.561867,Biella,3,13900,Via Gaetano De Marchi,biella@uisp.it,UISP Unione Italiana Sport per Tutti - Comitato Territoriale Biella,+39 0153 3349,,ngo,POINT (8.052497863769531 45.561866760253906),node
+1,"{""facebook"":""https://www.facebook.com/csi.biella"",""fax"":""+39 0152 2594""}",0,1,4085236910,8.056649,1459266618,45.567616,Biella,15,13900,Via Guglielmo Marconi,biella@csi-net.it,CSI Centro Sportivo Italiano - Comitato Provinciale di Biella,+39 0152 2594,http://www.csibiella.it/,ngo,POINT (8.056649208068848 45.5676155090332),node
+2,,0,1,4085246681,8.059962,1459267078,45.565395,Biella,21,13900,Viale Giacomo Matteotti,biella@aics.it,AICS Associazione Italiana Cultura e Sport - Comitato Provinciale Biella,+39 346 7274551,http://www.aics.it/?page_id=14845,ngo,POINT (8.059962272644043 45.56539535522461),node
+3,,0,1,4742274583,8.157689,1489879703,45.671127,,,,,,Uso e Riuso,,,ngo,POINT (8.157689094543457 45.67112731933594),node

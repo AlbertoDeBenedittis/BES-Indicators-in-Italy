@@ -1,0 +1,10 @@
+,tags,lat,timestamp,changeset,id,version,lon,addr:city,addr:housenumber,addr:postcode,addr:street,email,name,opening_hours,phone,website,office,geometry,osm_type
+0,,41.063232,1507975228,0.0,5167098528,1,14.335068,,,,Via J. F. Kennedy,,NewHope,,,,ngo,POINT (14.335067749023438 41.063232421875),node
+1,"{""source"":""mapillary""}",40.84161,1513713833,0.0,5294428545,1,14.245338,Napoli,75,80132,Via Concordia,,CAF Unilpe,,,,ngo,POINT (14.245338439941406 40.841609954833984),node
+2,,40.697716,1541882728,0.0,6051580086,1,14.633271,,12/A,84010,Via Grisignano,staff@riservabiosferacostiera.org,ACARBIO,Mo-Sa 10:00-18:00,+39089876236,http://www.acarbio.org,ngo,POINT (14.633271217346191 40.697715759277344),node
+3,,40.990433,1548861824,0.0,6247248502,1,13.984915,Castel Volturno,40,81030,Via Cosenza,,Centro LGBT del mediterraneo,,,,ngo,POINT (13.984914779663086 40.99043273925781),node
+4,,41.061623,1628338289,0.0,7761445633,2,14.392664,Valle di Maddaloni,14,81020,SP167 Caserta - Ponti della Valle,,Fondazione Leo Amici,,,,ngo,POINT (14.392663955688477 41.061622619628906),node
+5,"{""contact:facebook"":""https://www.facebook.com/cri.casalnuovodinapoli"",""name:en"":""Italian Red Cross""}",40.911606,1599204075,0.0,7874688579,1,14.34393,Casalnuovo di Napoli,9,80013,Via Armando Virnicchi,,Croce Rossa Italiana,,,http://www.crinapoli.it/index.html,ngo,POINT (14.3439302444458 40.91160583496094),node
+6,,40.86232,1602918114,0.0,8015539272,1,14.269732,Napoli,4,80041,Via Pietro Giannone,,Associazione teniamoci per mano,,3478895800,https://teniamocipermanoonlus.net/,ngo,POINT (14.269732475280762 40.86231994628906),node
+7,,41.288162,1620842289,0.0,8725995948,1,14.732557,,,,,,Coldiretti Benevento - Sez. di Campolattaro,,,,ngo,POINT (14.73255729675293 41.28816223144531),node
+8,"{""building"":""yes""}",,1615027419,,914095660,1,,,,,,,Associazione Collegiata Solofra,,,,ngo,"POLYGON ((14.8470271 40.8293043, 14.8470919 40.8293006, 14.8470885 40.829218, 14.8470278 40.8292136, 14.8469651 40.8292172, 14.8469703 40.82929, 14.8470262 40.8292871, 14.8470271 40.8293043))",way

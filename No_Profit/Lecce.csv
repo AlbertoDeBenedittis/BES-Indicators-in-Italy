@@ -1,0 +1,2 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,name,opening_hours,phone,website,office,geometry,osm_type
+0,"{""deaf:description:it"":""ENS Ente Nazionale Sordi""}",0,6,3303208466,18.159975,1581765789,40.346916,Lecce,11/13,73100,Via Clemente Antonaci,ENS Ente Nazionale Sordi,Tu 16:00-19:30; We 09:00-12:00; Th 16:00-19:30,+39 0832 301012,http://lecce.ens.it/,ngo,POINT (18.159975051879883 40.34691619873047),node

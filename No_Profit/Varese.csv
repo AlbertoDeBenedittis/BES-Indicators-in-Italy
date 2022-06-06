@@ -1,0 +1,4 @@
+,tags,changeset,version,id,lon,timestamp,lat,name,phone,website,office,geometry,osm_type
+0,"{""wikidata"":""Q15139302"",""wikipedia"":""it:La Famiglia Bustocca""}",0,6,2565961378,8.854022,1639326619,45.61396,La Famiglia Bustocca,,http://lafamigliabustocca.org/,ngo,POINT (8.854022026062012 45.61396026611328),node
+1,,0,1,4262751885,8.900937,1466777048,45.6376,Croce Rossa Italiana - Delegazione di Gorla Minore,+39 0331 604630,,ngo,POINT (8.9009370803833 45.63759994506836),node
+2,,0,1,5539167418,8.875725,1523247561,45.772907,Gruppo di Betania Onlus,,,ngo,POINT (8.875724792480469 45.77290725708008),node

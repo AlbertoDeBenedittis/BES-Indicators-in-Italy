@@ -1,0 +1,17 @@
+,tags,lat,timestamp,changeset,id,version,lon,addr:city,addr:housenumber,addr:postcode,addr:street,email,name,opening_hours,operator,phone,website,office,geometry,osm_type
+0,,42.43378,1356365003,0.0,945965294,3,14.265726,,,,,,Caf,,,,,ngo,POINT (14.265726089477539 42.433780670166016),node
+1,"{""wheelchair"":""limited""}",42.363873,1396271395,0.0,2749450545,2,13.727052,Castel del Monte,23,67023,Via Centrale,prolococasteldelmonte@gmail.com,Associazione Pro Loco Castel del Monte,,,+39 339 625 1715,,ngo,POINT (13.727051734924316 42.36387252807617),node
+2,"{""description"":""Promozione attivit\u00E0 legate alla montagna""}",42.088356,1623088231,0.0,2784825545,9,14.205132,Fara San Martino,,,Viale Quattro Novembre,,CAI Fara San Martino,Fr 21:00-23:00,,+39 320 726 9364,https://www.caifarasanmartino.it,ngo,POINT (14.205131530761719 42.088356018066406),node
+3,,42.51993,1397332137,0.0,2786247643,4,13.300603,,,,,,Associazione Nazionale Alpini,,,,,ngo,POINT (13.300602912902832 42.51993179321289),node
+4,,42.519894,1397332137,0.0,2786270916,2,13.30056,,,,,,Associazione Culturale Alto Aterno,,,,,ngo,POINT (13.300559997558594 42.519893646240234),node
+5,,42.519867,1397332137,0.0,2786270921,2,13.300619,,,,,,Centro Diurno Anziani,,,,,ngo,POINT (13.300619125366211 42.519866943359375),node
+6,,42.51995,1397332137,0.0,2786270925,2,13.300676,,,,,,Consulta dei Giovani,,,,,ngo,POINT (13.300676345825195 42.51995086669922),node
+7,,42.500816,1442744562,0.0,3751375262,1,14.169253,Montesilvano,421,65015,Corso Umberto I,,Federproprietà Abruzzo,,,,,ngo,POINT (14.1692533493042 42.500816345214844),node
+8,,42.50082,1442744562,0.0,3751375263,1,14.169282,Montesilvano,425,65015,Corso Umberto I,,AAmCo,,,,,ngo,POINT (14.169281959533691 42.50082015991211),node
+9,,42.032745,1486598125,0.0,4666449609,2,13.425445,Avezzano,33,67051,Via Giuseppe Mazzini,,CAI - Club Alpino Italiano,,,,,ngo,POINT (13.425444602966309 42.032745361328125),node
+10,,42.03401,1538345682,0.0,4694606357,4,13.427321,Avezzano,,67051,Via Sergio Cataldi,,AGESCI,,,,,ngo,POINT (13.427321434020996 42.03401184082031),node
+11,,42.48083,1610548204,0.0,6598255585,3,14.106282,Cappelle sul Tavo,,65010,Via Giovanni Pascoli,,S.M.A.P.E. s.r.l.,,,,http://www.smape.it/profile_and_mission.aspx,ngo,POINT (14.106282234191895 42.480831146240234),node
+12,,42.457092,1589556093,0.0,7016262700,3,14.223528,,206,65126,Via Benedetto Croce,info@confasi.it,CAF CONFASI - Sede Periferica di Pescara,"Mo-Fr 09:00-13:00, 15:30-19:30",,+39 085693716,http://cafconfasi.it,ngo,POINT (14.223527908325195 42.45709228515625),node
+13,"{""amenity"":""prep_school""}",42.03364,1606313571,0.0,8164781762,1,13.421094,,10,,Via Eleuterio di Gianfilippo,,AmbeCò,,,0863 411088,https://www.ambeco.info/,ngo,POINT (13.421093940734863 42.03364181518555),node
+14,"{""emergency"":""ambulance_station"",""healthcare"":""doctor"",""operator:wikidata"":""Q913903"",""operator:wikipedia"":""it:Croce Rossa Italiana""}",42.191696,1625143265,0.0,8882996842,1,14.219644,Guardiagrele,,66016,Via Occidentale,,Croce Rossa Italiana,,Croce Rossa Italiana Alba Adriatica,,,ngo,POINT (14.219643592834473 42.19169616699219),node
+15,"{""building"":""yes""}",,1511633396,,542807343,1,,Pescara,19,65129,Via Luigi Polacchi,,Protezione Civile Infinity,,,,,ngo,"POLYGON ((14.2462204 42.4436827, 14.2463745 42.4435888, 14.2461889 42.4434329, 14.2458841 42.4436164, 14.2460663 42.4437818, 14.2461352 42.4437387, 14.2462204 42.4436827))",way

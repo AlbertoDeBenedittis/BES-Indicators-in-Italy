@@ -1,0 +1,2 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,name,office,geometry,osm_type
+0,"{'addr:city': 'Faella', 'addr:housenumber': '42', 'addr:postcode': '52026', 'addr:street': 'Via Vittorio Emanuele', 'name': 'Misericordia Faella', 'office': 'ngo'}",0,1,7863138508,11.519109,1598914659,43.62624,Faella,42,52026,Via Vittorio Emanuele,Misericordia Faella,ngo,POINT (11.519108772277832 43.62623977661133),node

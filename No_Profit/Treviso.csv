@@ -1,0 +1,4 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,name,office,geometry,osm_type
+0,,0,4,3685353314,12.080377,1455961184,45.871075,Moriago della Battaglia,20,31010,"Via Conti (""Francia"") - Mosnigo",Sede AssociazioneCis,ngo,POINT (12.080376625061035 45.87107467651367),node
+1,"{""level"":""0""}",0,1,4722628144,12.048315,1488909230,45.77538,,,,,Associazione Noi con Voi,ngo,POINT (12.048315048217773 45.7753791809082),node
+2,"{""smoking"":""no""}",0,1,4743633282,12.034216,1489948160,45.773254,Montebelluna,34,31044,Via Ospedale,Croce Bianca Italiana. Volontari del soccorso,ngo,POINT (12.034215927124023 45.77325439453125),node

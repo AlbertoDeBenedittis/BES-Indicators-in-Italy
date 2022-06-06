@@ -1,0 +1,3 @@
+,tags,changeset,version,id,lon,timestamp,lat,name,office,geometry,osm_type
+0,"{'name': 'Crosse Rossa Italiana', 'office': 'ngo'}",0,1,4234614668,12.319259,1465507475,45.43271,Crosse Rossa Italiana,ngo,POINT (12.319258689880371 45.432708740234375),node
+1,{'office': 'ngo'},0,1,5736641521,12.346415,1530624300,45.433895,,ngo,POINT (12.346414566040039 45.433895111083984),node

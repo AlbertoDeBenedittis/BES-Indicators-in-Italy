@@ -1,0 +1,4 @@
+,tags,changeset,version,id,lon,timestamp,lat,name,office,geometry,osm_type,website
+0,"{'name': 'Gruppo Fratres Donatori di Sangue', 'office': 'ngo'}",0.0,1,3361868373,10.682123,1424447506,43.884907,Gruppo Fratres Donatori di Sangue,ngo,POINT (10.682123184204102 43.88490676879883),node,
+1,"{""building"":""yes""}",,3,165244967,,1424449910,,Misericordia di Uzzano,ngo,"POLYGON ((10.7079214 43.8816924, 10.7079509 43.8818277, 10.7079939 43.8818219, 10.7080153 43.8819108, 10.7078115 43.881936, 10.7077653 43.8817102, 10.7079214 43.8816924))",way,
+2,,,1,1008925099,,1638554561,,Opera Santa Rita Fondazione Onlus,ngo,"POLYGON ((11.0095878 43.8671259, 11.0107997 43.8666876, 11.0104247 43.8661818, 11.0102439 43.8662829, 11.0099766 43.8663719, 11.0096918 43.8664356, 11.0096022 43.8664449, 11.0091865 43.8664771, 11.0095878 43.8671259))",way,https://operasantarita.it/sociosanitario/comunita-residenziali/comunita-per-autistici-villa-nesti/

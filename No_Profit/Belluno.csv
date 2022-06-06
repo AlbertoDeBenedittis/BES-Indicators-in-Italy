@@ -1,0 +1,6 @@
+,tags,changeset,version,id,lon,timestamp,lat,name,office,geometry,osm_type
+0,,0.0,1,4232571029,12.037961,1465423600,46.080345,Schola Cantorum Santa Giustina,ngo,POINT (12.03796100616455 46.080345153808594),node
+1,,0.0,1,4262423957,12.204118,1466767646,46.1401,ABVS,ngo,POINT (12.204117774963379 46.140098571777344),node
+2,"{""emergency"":""ambulance_station""}",0.0,1,6695413032,12.060021,1565284742,46.444805,Croce Bianca,ngo,POINT (12.06002140045166 46.44480514526367),node
+3,,0.0,1,9408651314,11.89736,1641852863,46.367867,Gruppo Alpini Caviola,ngo,POINT (11.897359848022461 46.36786651611328),node
+4,"{""building"":""yes"",""description"":""Postazione di primo soccorso"",""note"":""verificare se man_made=works""}",,2,199110809,,1516289706,,Croce Verde Val Biois,ngo,"POLYGON ((11.8645005 46.3531936, 11.8646634 46.3533139, 11.8647824 46.3532405, 11.8646215 46.3531189, 11.8645005 46.3531936))",way

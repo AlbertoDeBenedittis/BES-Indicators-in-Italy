@@ -1,0 +1,2 @@
+,addr:city,addr:housenumber,addr:postcode,addr:street,name,id,timestamp,version,tags,osm_type,geometry
+0,Arcole,2/4,37040,Via Comparine,Gruppo Napoleon SpA,746942793,1574162590,1,"{""area"":""yes"",""industrial"":""factory"",""landuse"":""industrial""}",way,"POLYGON ((11.2916344 45.3535145, 11.2914215 45.3529448, 11.2912522 45.3526112, 11.2924022 45.3523722, 11.2922815 45.3520862, 11.2921313 45.3517243, 11.2939154 45.3513517, 11.294504 45.352692, 11.2942487 45.3527702, 11.2930244 45.3532221, 11.2921953 45.3534345, 11.2916344 45.3535145))"

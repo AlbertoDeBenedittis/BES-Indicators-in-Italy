@@ -1,0 +1,8 @@
+,tags,lat,timestamp,changeset,id,version,lon,addr:city,addr:housenumber,addr:postcode,addr:street,name,opening_hours,operator,phone,website,office,geometry,osm_type
+0,,44.40286,1615595036,0,2609166839,2,8.954556,Genova,3/5 B,16129,Via Caffa,Sede Legambiente Liguria e FIAB Genova,"Tu,We,Th 17:30-19:00 ""FIAB Genova""",,+39 0103621357,,ngo,POINT (8.954556465148926 44.40285873413086),node
+1,,44.312878,1427018759,0,3370018131,2,9.324389,,,,,Lega Navale Italiana sez. di Chiavari e Lavagna,,,,,ngo,POINT (9.324389457702637 44.3128776550293),node
+2,,44.408592,1553361559,0,4579703568,4,8.933205,Genova,1,16123,Vico Falamonica,Azione Cattolica Italiana diocesi di Genova,,,+39 010 2474563,https://www.azionecattolica.ge.it/cd/,ngo,POINT (8.933204650878906 44.408592224121094),node
+3,"{""entrance"":""yes"",""wheelchair"":""yes""}",44.330616,1498804514,0,4943401664,1,8.514014,,122,,Corso Filippo Ferrari,Società San Vincenzo de Paoli,,Conferenza locale Stella Maris,+39 019 489823,,ngo,POINT (8.51401424407959 44.33061599731445),node
+4,,43.821377,1563477558,0,6629586683,1,7.7678657,,,,,Malteser,,,,,ngo,POINT (7.7678656578063965 43.82137680053711),node
+5,,43.789295,1629833303,0,9033018180,1,7.609857,Ventimiglia,17,18039,Via Vittorio Veneto,ACSI Commitato Provinciale Imperia,,,+39 0184 238558,https://www.acsi.it/,ngo,POINT (7.609857082366943 43.7892951965332),node
+6,"{""indoor"":""yes"",""short_name"":""UNICEF""}",44.49635,1642700092,0,9434246336,1,8.903947,,,,,Punto d'incontro UNICEF,,UNICEF,,,ngo,POINT (8.903946876525879 44.4963493347168),node

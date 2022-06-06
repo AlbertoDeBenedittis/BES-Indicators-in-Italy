@@ -1,0 +1,3 @@
+,name,office,id,timestamp,version,tags,osm_type,geometry,changeset
+0,Africa Chiama ONLUS,ngo,777572981,1583100636,1,"{""building"":""yes"",""height"":""4.296""}",way,"POLYGON ((9.4105592 45.2380347, 9.4106407 45.238053, 9.4106634 45.2380026, 9.4105851 45.2379833, 9.4105657 45.2380219, 9.4105592 45.2380347))",
+1,Croce Casalese,ngo,21206795,1329121110,2,"{""emergency"":""ambulance_station"",""type"":""site""}",relation,"POLYGON ((9.655664 45.1693243, 9.6562092 45.1694566, 9.6562983 45.1692568, 9.6557665 45.1691165, 9.655664 45.1693243))",0.0

@@ -1,0 +1,3 @@
+,tags,changeset,version,id,lon,timestamp,lat,name,office,geometry,osm_type
+0,"{'name': 'Misericordia di Chianni', 'office': 'ngo'}",0.0,1,9123436248,10.641949,1632627542,43.483196,Misericordia di Chianni,ngo,POINT (10.641948699951172 43.48319625854492),node
+1,"{""contact:website"":""http://www.ippoasi.org"",""landuse"":""farmyard""}",,1,405011607,,1458596299,,Ippoasi,ngo,"POLYGON ((10.3451367 43.676807, 10.3453566 43.6755111, 10.3450508 43.6755034, 10.3454585 43.6730008, 10.3474219 43.6732297, 10.3467996 43.6768613, 10.3451367 43.676807))",way

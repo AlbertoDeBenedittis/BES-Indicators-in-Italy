@@ -1,0 +1,2 @@
+,tags,changeset,version,id,lon,timestamp,lat,name,website,office,geometry,osm_type
+0,"{'name': 'FabLab', 'office': 'ngo', 'website': 'http://fablabparma.org/'}",0,4,5269692544,10.340249,1519553146,44.81316,FabLab,http://fablabparma.org/,ngo,POINT (10.340249061584473 44.81315994262695),node

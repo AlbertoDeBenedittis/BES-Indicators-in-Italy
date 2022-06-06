@@ -1,0 +1,4 @@
+,tags,changeset,version,id,lon,timestamp,lat,name,office,geometry,osm_type,email,phone,website
+0,"{""contact:facebook"":""https://www.facebook.com/associazioneculturale.doina""}",0.0,3,3432107768,8.197351,1546003144,44.898796,Associazione culturale italo-romena Doina,ngo,POINT (8.197351455688477 44.89879608154297),node,,,
+1,"{""building"":""yes""}",,2,336728204,,1584259929,,Associazione Nazionale Alpini – Sezione di Asti,ngo,"POLYGON ((8.1941005 44.9065747, 8.1942049 44.906672, 8.1940909 44.9067333, 8.1939866 44.906636, 8.1941005 44.9065747))",way,,+39 0141 531 018,https://www.anaasti.it
+2,"{""building"":""yes"",""fax"":""+39 0141 430 045""}",,5,403445584,,1597920090,,Fondazione Cassa di Risparmio di Asti,ngo,"POLYGON ((8.2024101 44.8996645, 8.2023542 44.8996558, 8.2020772 44.8996129, 8.2021827 44.899292, 8.2023919 44.8993268, 8.2024029 44.8995188, 8.2024101 44.8996645))",way,segreteria@fondazionecrasti.it,+39 0141 592 730,https://www.fondazionecrasti.it

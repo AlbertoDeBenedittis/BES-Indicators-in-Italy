@@ -1,0 +1,2 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,email,name,phone,website,office,geometry,osm_type
+0,"{""fax"":""+39 0142424619""}",0,1,4086661614,8.453065,1459351102,45.13414,Casale Monferrato,8,15033,Via Leardi,anffascasale@tiscali.it,ANFFAS Associazione Nazionale Famiglie con Disabilità Intellettiva e/o Relazionale - Casale Monferrato,+39 0142452836,http://www.anffas-casale.it/,ngo,POINT (8.453064918518066 45.13414001464844),node

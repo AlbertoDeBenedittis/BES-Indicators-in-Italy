@@ -1,0 +1,11 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,name,website,office,geometry,osm_type,opening_hours,phone
+0,"{""source"":""survey""}",0.0,2,2404039977,9.274553,1391878122,45.58233,Monza,6,20900,Vicolo Ambrogiolo,Università Popolare,http://www.universitapopmonza.eu/,ngo,POINT (9.274553298950195 45.58232879638672),node,,
+1,,0.0,2,4051521778,9.408206,1457554093,45.645687,Bernareggio,,,Via Dante Alighieri,ProLoco Bernareggio,,ngo,POINT (9.40820598602295 45.645687103271484),node,,
+2,,0.0,1,5253634930,9.157529,1511945078,45.66041,Meda,6,20821,Via Generale Cantore,Caritas - Centro di Ascolto di Meda,,ngo,POINT (9.1575288772583 45.6604118347168),node,,
+3,,0.0,1,5253634931,9.157493,1511945078,45.66043,Meda,,20821,Via Generale Cantore,Banda Santa Cecilia,,ngo,POINT (9.157492637634277 45.660430908203125),node,,
+4,,0.0,1,6644718841,9.146667,1564001157,45.62821,Cesano Maderno,2,20811,Piazza Esedra,Gruppo Alpini Cesano Maderno,,ngo,POINT (9.146666526794434 45.62820816040039),node,,
+5,,0.0,1,7251705429,9.203306,1582925392,45.674767,,,,,Io Corro Con Giovanni,,ngo,POINT (9.203306198120117 45.674766540527344),node,,
+6,,0.0,1,7358878398,9.244184,1585833025,45.57132,Monza,7,20900,Via San Fruttuoso,Associazione culturale San Fruttuoso,,ngo,POINT (9.244183540344238 45.571319580078125),node,,
+7,,0.0,1,9217287925,9.1354475,1635810027,45.651566,Seveso,2,20822,Largo Volontari del sangue,AVIS comunale Seveso,,ngo,POINT (9.13544750213623 45.65156555175781),node,,
+8,,0.0,1,9248673781,9.220592,1636822673,45.61329,Desio,71,20832,Via Carlo Forlanini,Sindacato Autonomo Lavoratori Italiani,,ngo,POINT (9.22059154510498 45.61328887939453),node,,
+9,"{""building"":""yes"",""smoking"":""outside"",""wikipedia"":""it:Croce Bianca Milano""}",,3,247661602,,1434824207,,Giussano,72,20833,Via Massimo D'Azeglio,Croce Bianca Giussano,www.crocebiancagiussano.org,ngo,"POLYGON ((9.2029209 45.6912613, 9.2029695 45.6913742, 9.2031249 45.6913415, 9.2030763 45.6912286, 9.2029209 45.6912613))",way,24/7,+39 0362 850269

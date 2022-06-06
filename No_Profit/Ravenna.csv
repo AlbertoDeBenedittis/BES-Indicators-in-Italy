@@ -1,0 +1,7 @@
+,tags,changeset,version,id,lon,timestamp,lat,addr:city,addr:housenumber,addr:postcode,addr:street,email,name,operator,website,office,geometry,osm_type
+0,,0.0,2,4751595415,11.864701,1537710750,44.29562,Faenza,12,48018,Viale Risorgimento,faenza@cri.it,Croce Rossa,,,ngo,POINT (11.864701271057129 44.29561996459961),node
+1,,0.0,3,4751659570,11.88555,1595079228,44.285683,Faenza,9,48018,Piazza Undici Febbraio,,Sala San Carlo,CISL,,ngo,POINT (11.885549545288086 44.285682678222656),node
+2,,0.0,2,4752504237,11.91105,1545679412,44.41608,Lugo,17,48022,Viale degli Orsini,,Croce Rossa Italiana - Comitato di Lugo,,,ngo,POINT (11.911049842834473 44.416080474853516),node
+3,"{""brand"":""Croce Rossa Italiana"",""description"":""Croce Rossa Italiana - Comitato di Ravenna - Sede centrale""}",0.0,3,6251339723,12.189861,1549820273,44.41362,Ravenna,11,48121,Via Gorizia,,Croce Rossa,,https://www.criravenna.it/,ngo,POINT (12.189861297607422 44.41361999511719),node
+4,"{""description"":""Croce Rossa Italiana - Comitato di Ravenna - Sede corsi""}",0.0,2,6269461632,12.202659,1549820273,44.41565,Ravenna,19,48121,Via Girotto Guaccimanni,,Croce Rossa,,https://www.criravenna.it/,ngo,POINT (12.202658653259277 44.4156494140625),node
+5,"{""building"":""yes"",""source"":""Regione Emilia Romagna""}",,6,151939787,,1615423552,,,,,,,Mani Tese,,,ngo,"POLYGON ((11.8931739 44.286887, 11.8933694 44.2870314, 11.8934284 44.287075, 11.8934661 44.2870492, 11.8935235 44.2870086, 11.8932689 44.2868206, 11.8932022 44.2868672, 11.8931739 44.286887))",way
