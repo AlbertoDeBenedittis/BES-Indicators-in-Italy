@@ -25,6 +25,7 @@ The repository is structured as follows:
 * `Dati Streamlite` contains all the data after the data processing stage. This folders contains a folder for each domain where are stored the files containing the data of each indicator
 * `Dictionaries` contains three pickels files. Each of them contains a python dictionary where are saved the results of the best territory analysis. 
 * `Factories`, `Freetime`, and `No_Profit` contain the data retrived from osm via `pyrosm` about all the factories, the non for profit organizations and the amanities of the biggest city in Italy. 
+* `Nuovi_Dati2` contains the files created from the original file containing all the information about the bes indicators. 
 * `Medaglie` contains the .png files of a gold medal, a silver medal, and a bronze medal. They are used in the maps of the best territories
 * `Icons` contains the .png files of the logos of the 10 biggest city of italy. They are used in the isochrones maps. 
 * the two requirements files contains all the dependences of the two virtual enviromnet used for this project
