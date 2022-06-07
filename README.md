@@ -45,7 +45,7 @@ The code is fully written in Python.
 >  e.g.  `conda install --channel conda-forge geopandas`.
 * In `Notebook.ipynb` is specified where the two different enviromnet are used. However, broadly speaking, the second virtual enviromnent has been used just for collecting the data from Open Street Map through `pyrosm`. 
  
-**NB: I suggest to not run all cells automatically but to follow the instruction written in the Notebook. This is due to the fact that some chunks of code have been already executed. For instance, the data cleaning stage has been already done and repeating the operation would be just a waste of time. Moreover, due to the fact that there are multiple domains and level of analysis, some computations have to be repeated many times. For example, for the creation of the model that assess which are the best territories for each domain, the results have been saved as a python dictionary into pickle files.**
+**NB: I suggest to not run all cells automatically but to follow the instruction written in the Notebook. This is due to the fact that some chunks of code have been already executed. For instance, the data cleaning stage has been already done and repeating the operation would be just a waste of time. Moreover, due to the fact that there are multiple domains and level of analysis, some computations have to be repeated many times. For example, for the creation of the model that assess which are the best territories for each domain, there is the need to execute the same computation 36 times. To avoid this, the results have been saved as a python dictionary into pickle files.**
 
 
 
